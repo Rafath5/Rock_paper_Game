@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* good practice to include box-sizing=border=box */
+    
+}
+body{
+    background-color:#201e2f ;
+    color: azure;
+    border: 8px solid white;
+    margin-bottom: 1px;
+    padding-bottom:135px;
+}
+header{
+   margin:0px;
+    padding:20px;
+
+}
+header>h1{
+background-color: white;
+color: #25272E;
+text-align: center;
+font-family: 'Asap Condensed';
+}
+#reset{
+    background: black;
+    color: white;
+    font-size: larger;
+    
+    border:2px solid white;
+    border-radius:4px;
+    padding:4px;
+    font-family: 'Asap Condensed';
+    position:absolute;
+    top:146px;
+    left:400px;
+    
+}
+#reset:hover{
+    background:red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.scoreboard{
+    border:5px solid white;
+    width:200px;
+    /* auto- is used to center */
+    height: 120px;
+    margin:20px auto;
+    font-size: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding:15px 20px;
+    font-family: 'Asap Condensed';
+    background-color: black;
+    position: relative;
+}
+.badge{
+     background-color: rgb(199, 24, 24);
+     font-size: 25px;
+     font-size: 'Asap condensed'; 
+     border-radius: 3px;
+     border: 2px solid white;
+}
+#User-Label{
+    /* want the position to be at the score boeards top left corner */
+    position: absolute;
+    top:45px;
+    left:-30px;
+
+}
+#Computer-label{
+    position: absolute;
+    top:45px;
+    left:148px;
+
+}
+.Result >p{
+   font-size: 40px;
+   text-align: center;
+   font-family: 'Asap condensed'; 
+   font-weight: bold;
+  
+}
+.choices{
+    text-align: center;
+    margin: 50px 0px;
+
+   
+    
+}
+.choice{
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin:0px 40px;
+    padding: 20px;
+    transition: all 0.1s ease;
+
+}
+/* when we go over the choice we want to make it hover */
+.choices :hover{
+   cursor: pointer;
+   background: rgb(212, 9, 19);
+   
+  
+}
+.choice:hover{
+    border: 6px solid rgb(212, 233, 24);
+    transform: scale(1.3);
+}
+#action-message{
+    text-align: center;
+    color: rgb(219, 217, 85);
+    font-family: 'Asap condensed';
+    font-size: 30px;
+    font-weight: bold;
+}
+.green{
+    border:6px sloid lightgreen;
+    box-shadow: 0 0 15px darkgreen;
+    
+}
+.red{
+    border:6px sloid rgb(192, 102, 102);
+    box-shadow: 0 0 8px red;
+}
+.grey{
+    
+        border:6px sloid gray;
+        box-shadow: 0 0 8px rgb(54, 48, 48);
+    
+}
